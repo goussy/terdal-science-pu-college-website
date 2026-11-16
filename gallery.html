@@ -165,7 +165,7 @@ textarea{min-height:125px;resize:vertical}
 </head><body>
 <!-- Standalone version: CSS, JS and school logo are embedded for reliable local opening. -->
 <div id="site-header"></div>
-<main><section class="page-hero"><div class="container reveal"><div class="eyebrow">Gallery</div><h1>Moments that matter.</h1><p class="lead">A dynamic gallery ready for the college's real photographs.</p></div></section><section class="section"><div class="container"><div class="gallery-tabs"><button class="tab active" data-filter="All">All</button><button class="tab" data-filter="Campus">Campus</button><button class="tab" data-filter="Classrooms">Classrooms</button><button class="tab" data-filter="Events">Events</button><button class="tab" data-filter="Sports">Sports</button><button class="tab" data-filter="Activities">Activities</button></div><div class="gallery" id="galleryGrid"></div></div></section>
+<main><section class="page-hero"><div class="container reveal"><div class="eyebrow">Gallery</div><h1>Moments that matter.</h1><p class="lead">A dynamic gallery ready for the college's real photographs.</p></div></section><section class="section"><div class="container"><div class="gallery-tabs"><button class="tab active" data-filter="All">All</button><button class="tab" data-filter="Campus">Campus</button><button class="tab" data-filter="Classrooms">Classrooms</button><button class="tab" data-filter="Events">Events</button><button class="tab" data-filter="Sports">Sports</button><button class="tab" data-filter="Achievements">Achievements</button></div><div class="gallery" id="galleryGrid"></div></div></section>
 <div class="lightbox" id="lightbox" role="dialog" aria-modal="true" aria-label="Image viewer"><button class="lb-close" id="lbClose" aria-label="Close">×</button><button class="lb-prev" id="lbPrev" aria-label="Previous">‹</button><img id="lbImage" alt=""><button class="lb-next" id="lbNext" aria-label="Next">›</button></div></main>
 <div id="site-footer"></div>
 <div class="float-actions"><a class="whatsapp" href="https://wa.me/" aria-label="WhatsApp">WA</a><a class="call" href="tel:" aria-label="Call">☎</a></div>
@@ -258,15 +258,15 @@ function submitForm(form){
 document.addEventListener("DOMContentLoaded",()=>document.querySelectorAll("form[data-demo]").forEach(submitForm));
 
 const galleryData = [
- ["Campus","https://images.unsplash.com/photo-1562774053-701939374585?auto=format&fit=crop&w=1200&q=85","Campus atmosphere"],
- ["Academics","https://images.unsplash.com/photo-1509062522246-3755977927d7?auto=format&fit=crop&w=1200&q=85","Learning environment"],
- ["Activities","https://images.unsplash.com/photo-1544717305-2782549b5136?auto=format&fit=crop&w=1200&q=85","Student activity"],
+ ["Campus","/assets/Campus.jpeg","Campus atmosphere"],
+ ["Campus","/assets/Infrastructure.jpeg","Campus life"],
+ ["Classrooms","/assets/learning.jpg","Classroom"],
+ ["Achievements","/assets/Achivements.jpeg","Student achievements"],
  ["Sports","https://images.unsplash.com/photo-1461896836934-ffe607ba8211?auto=format&fit=crop&w=1200&q=85","Sports and wellness"],
- ["Events","https://images.unsplash.com/photo-1503676382389-4809596d5290?auto=format&fit=crop&w=1200&q=85","School event"],
- ["Classrooms","https://images.unsplash.com/photo-1580582932707-520aed937b7b?auto=format&fit=crop&w=1200&q=85","Classroom"],
- ["Campus","https://images.unsplash.com/photo-1577896851231-70ef18881754?auto=format&fit=crop&w=1200&q=85","Campus life"],
- ["Activities","https://images.unsplash.com/photo-1588072432836-e10032774350?auto=format&fit=crop&w=1200&q=85","Creative learning"],
- ["Events","https://images.unsplash.com/photo-1524178232363-1fb2b075b655?auto=format&fit=crop&w=1200&q=85","Learning together"]
+ ["Academics","https://images.unsplash.com/photo-1509062522246-3755977927d7?auto=format&fit=crop&w=1200&q=85","Learning environment"],
+ ["Events","/assets/chairman.jpeg","College event"],
+ ["Events","/assets/Events.jpeg","College events"],
+ ["Events","/assets/Events2.jpeg","College events"]
 ];
 function initGallery(){
  const grid=document.querySelector("#galleryGrid"); if(!grid)return;
